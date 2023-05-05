@@ -1,0 +1,400 @@
+/*
+Colors Used:
+Primary Color for Website: #4472C4;
+Secondary Color for Website: #9BD1E5;
+*/
+
+/*
+font-family: 'Poppins', sans-serif;
+weight: 400,600,800;
+*/
+
+*    {
+        box-sizing: border-box;
+}
+
+body {
+        background-color: #fff;
+        font-family:'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.4;
+        color:black
+}
+
+h1 {
+       font-size: 2.75em; 
+       font-weight: 800;
+}
+
+h2 {
+        font-size: 2.25em; 
+        font-weight: 800;
+}
+
+h3 {
+        font-size: 1.75em; 
+        font-weight: 600;
+}
+
+h4 {
+        font-size: 1.35em; 
+        font-weight: 600;
+}
+
+h5 {
+        font-size: 1.0em; 
+        font-weight: 600;
+}
+
+img {
+        width: 100%;
+        padding: 10px;
+}
+
+svg {
+        width: 100%;
+        padding: 10px;
+}
+
+a   {
+        color: #4472C4;
+        text-decoration: none;
+}
+
+a:hover {
+            color: #9BD1E5;
+            text-decoration: underline;
+}
+
+a:active {
+            color:aqua;
+            text-decoration: underline;
+}
+
+a:focus   {
+            color:#9BD1E5;
+            text-decoration: underline;
+}
+
+.social   {
+                height: 64px;
+                width: auto;
+}
+
+
+/*
+Keep button style near bottom
+*/
+
+.button   {
+            display: inline-block;
+            background-color: #4472C4;
+            color:#fff;
+            font-weight: 600;
+            padding: 16px;
+            transition: .02s opacity;
+}
+
+.button:hover   {
+                    opacity: 0.8;
+                    text-decoration: none;
+                    font-weight: 800;
+                    background-color: #9BD1E5;
+                    color: #fff;
+}
+
+.button:focus   {
+                    opacity: 0.8;
+                    text-decoration: none;
+                    font-weight: 800;
+                    background-color: #9BD1E5;
+                    color: #fff;
+}
+
+.button.contact     {
+                        text-transform: uppercase;
+                        background-color: transparent;
+                        border: 2px solid #4472C4;
+                        color: #4472C4;
+}
+
+.hero-img     {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+}  
+
+/* layout styling */
+
+.container {
+                padding:0 15px;
+                max-width: 1200px;                
+}
+
+.row    {
+                margin:25px 0;
+}
+
+#work .row      {
+                        padding-bottom: 25px;
+}
+
+
+#hero  h1      {
+        text-align: center;
+}
+
+.logo           {
+        color: azure;
+        max-width: 150px;
+}
+
+header          {
+        background-color: #4472C4;
+        position:fixed;
+        width:100%;
+        padding: 10px 0 4px;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ;       
+}
+
+nav > ul        {
+        list-style-type: none;
+        padding: 0;
+}
+
+nav > ul > li > a       {
+        padding: 0 15px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color:azure
+}
+
+nav > ul > li >a:hover         {
+                opacity: 0.8;
+                text-decoration: none;
+                font-weight: 800;
+                color:#fff;              
+}
+
+.navtoggle li:not(:last-child)  {
+        display: none;
+}
+
+.navtoggle, .navtoggle.responsive  {
+        position:relative;
+}
+
+.navtoggle li .icon  {
+        position: absolute;
+        right: 0;
+        top: 2px;
+        font-size: 20px;
+        padding-right: 0;
+}
+
+.navtoggle.responsive nav  {
+        padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+        display: block;
+        padding: 10px 0;
+        border-top: 1px solid;
+}
+
+#hero   {
+                background-color:#4472C4;
+                padding: 20px 0;
+                width: 100%;
+                display: inline-block;
+                color: azure;
+                text-align: center;
+}
+
+#hero span      {
+        display: block;
+}
+
+main    {
+                padding-top: 100px;
+}
+
+.center {
+                text-align: center;
+}
+
+
+.link           {
+        display: flex;
+        align-items: center;  
+        padding: 0 15px;             
+}
+
+#about  {
+                padding-top: 150px;
+}
+
+#recycleitz     {
+        padding-top: 150px;
+}
+
+[class*="col-"] {
+        float: left;
+        padding: 50px;
+}
+
+.homeimage      {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 20px;
+}
+
+
+.mockup         {
+        width: 100%;
+}
+
+@keyframes color-change    {
+        from    {fill: #edc655;}
+        to      {fill: #f76414;}
+}
+
+.sun    {
+                animation: 4s color-change infinite alternate linear;
+
+}
+
+@keyframes cloud-move   {
+        from {transform: translate(0,50px);}
+        to {transform: translate(200px,50px);} 
+}
+
+.cloud-front    {
+        animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse   {
+        from {transform: translate(446px,48px);}
+        to {transform: translate(100px,48px);} 
+}
+
+.cloud-front-reverse    {
+        animation: 30s cloud-move-reverse infinite alternate linear;
+}
+
+/*Medium Devices*/
+@media only screen and (min-width: 640px) {
+        header  {
+                text-align: unset;
+        }
+
+        .row    {
+                margin:none;
+        }
+        
+        nav     {
+                width: auto;
+                float: right;
+                margin-top: 50px;
+        }
+
+        .logo   {
+                text-align: unset;
+                float:left;
+                margin-top: 4px;
+                padding: 20px 0 13px;
+                max-width: fit-content;
+        }
+
+        nav > ul > li   {
+                display:inline-block;
+        }
+
+        .navtoggle li:not(:last-child)  {
+                display: inline-block;
+        }
+
+        .navtoggle li:last-child  {
+                display: none;
+        }
+
+        h4  {
+                margin: 2px;
+
+        }
+
+        #hero   {
+                padding-top: 150px;
+        }
+
+        main    {
+                padding-top: 250px;
+        }
+
+        body     {
+                font-size: 18px;
+        }
+
+        .col-md-6       {
+                width: 50%;
+                padding: 5px;
+        }
+
+        .row::after     {
+                content:"";
+                clear: both;
+                display: table;
+        }
+
+        #about          {
+                padding-top: 200px;
+        }
+
+        #about h3 {
+                margin: top 0; 
+        }
+
+        #about .container       {
+                padding: 10px;
+        }
+
+        #contact        {
+                text-align: left;
+        }
+
+        #recycleitz      {
+                padding-top: 200px;
+        }
+
+     }
+
+/*Large Devices*/
+@media only screen and (min-width: 1024px) {
+        .col-lg-7    {
+                width: 60%;
+                float:left;
+        }
+        
+        .col-lg-5       {
+                width: 40%;
+                float: left;
+        }
+
+        .row::after     {
+                content:"";
+                clear: both;
+                display: table;
+        }
+
+        .container      {
+                max-width: 1200;
+                margin-left: auto;
+                margin-right: auto;
+        }
+}
+
